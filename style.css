@@ -7,6 +7,50 @@
 body {
   font-family: "Poppins", sans-serif;
   line-height: 1.4;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+}
+
+.container {
+  margin-bottom: 50px;
+}
+
+label,
+p {
+  font-weight: bold;
+  margin-bottom: 20px;
+ 
+}
+
+input {
+  margin-top: 2px;
+}
+
+input:active{
+    border-color: blue;
+}
+
+input[type='radio']{
+    transform: scale(2);
+}
+
+input[type='checkbox']{
+    transform: scale(1.5);
+}
+
+input,
+select {
+  margin-bottom: 10px;
 }
 
 .header {
@@ -15,24 +59,22 @@ body {
 }
 
 .header h1 {
-  margin-bottom: 20px;
-}
-
-.container{
-    margin: 0px 360px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin-bottom: 30px;
 }
 
 #survey-form {
   padding: 2.5rem;
   display: flex;
   flex-direction: column;
+  border-radius: 10px;
+  background-color: rgba(27, 27, 50, 0.8);
+  margin: 0px 500px;
 }
 
 .form-group {
   padding: 0.25rem;
+  display: flex;
+  flex-direction: column;
 }
 
 #name-label,
@@ -54,21 +96,26 @@ body {
   border-radius: 0.25rem;
 }
 
-.form-group label {
+.form-group label,
+input {
   display: flex;
-  gap: 10px;
+  gap: 20px;
 }
 
 #textbox {
   width: 100%;
   min-height: 120px;
   padding: 10px;
+  margin-bottom: 30px
 }
 
 #submit {
   width: 100%;
-  background: lightgreen;
+  background: #37af65;
   color: white;
   padding: 10px;
   border-radius: 10px;
+  font-size: 16px;
+  font-weight: bolder;
+  cursor: pointer
 }
