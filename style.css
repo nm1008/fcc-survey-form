@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -15,14 +17,22 @@ body {
       rgba(136, 136, 206, 0.7)
     ),
     url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
-  background-size: cover;
+  background-size:cover;
   background-repeat: no-repeat;
   background-position: center;
   color: white;
 }
 
+::placeholder, option, select{
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  
+}
+
+
+
 .container {
-  margin-bottom: 50px;
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,30 +41,31 @@ body {
 
 label,
 p {
-  font-weight: bold;
+ font-weight: 500;
   margin-bottom: 20px;
- 
 }
 
 input {
   margin-top: 2px;
+  
 }
 
-input:active{
-    border-color: blue;
+input:active {
+  border-color: blue;
 }
 
-input[type='radio']{
-    transform: scale(2);
+input[type="radio"] {
+  transform: scale(2);
 }
 
-input[type='checkbox']{
-    transform: scale(1.5);
+input[type="checkbox"] {
+  transform: scale(1.5);
 }
 
 input,
 select {
   margin-bottom: 10px;
+  
 }
 
 .header {
@@ -63,17 +74,17 @@ select {
 }
 
 .header h1 {
-  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 #survey-form {
   padding: 2.5rem;
   display: flex;
   flex-direction: column;
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: rgba(27, 27, 50, 0.8);
-  width: 70%;
- 
+  width: 40%;
 }
 
 .form-group {
@@ -111,36 +122,34 @@ input {
   width: 100%;
   min-height: 120px;
   padding: 10px;
-  margin-bottom: 30px
+  margin-bottom: 30px;
 }
 
 #submit {
   width: 100%;
   background: #37af65;
   color: white;
-  padding: 10px;
-  border-radius: 10px;
+  padding: 8px;
   font-size: 16px;
-  font-weight: bolder;
-  cursor: pointer
+  font-weight: 400;
+  cursor: pointer;
 }
 
 
 
 @media all and (max-width: 468px) {
-  .survey-form{
+  .survey-form {
     width: 110%;
   }
 
-   .others label{
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
+  .others label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
-  .others input{
-    height: 30px
+  .others input {
+    height: 30px;
   }
- 
 }
